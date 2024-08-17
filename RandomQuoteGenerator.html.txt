@@ -1,102 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-			background-color: white;
-			color: #333
-		}
-		
-		header {
-			background-color: #ffb3ff;
-			color: Black;
-			padding: 1rem;
-			text-align: center;
-		}
-		
-		nav {
-			text-align: center;
-			margin: 1rem 0;
-		}
-		
-		nav a {
-			margin: 0 1rem;
-			text-decoration: none;
-			color: #333;
-		}
-		
-		.container {
-			max-width: 1000px;
-			margin: 0 auto;
-			padding: 1 rem;
-		}
-		
-		section {
-			margin: 2rem 0;
-		}
-		
-		footer {
-			background-color: #ffb3ff;
-			color: Black;
-			text-align: center;
-			padding: 1rem 0;
-			margin-top: 2rem;
-		}
-		
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        #quote-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        #quote {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        #author {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        #new-quote {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        #new-quote:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>Shruti Avhad</h1>
-		<p>Web Developer</p>
-	</header>
-	
-	<nav>
-		<a href="#about">About Me</a>
-		<a href="#Projects">Projects</a>
-		<a href="#skills">Skills</a>
-		<a href="#contact">Contact</a>
-	</nav>
-	
-	<div class="container">
-		<section id="about">
-		<h2>About Me</h2> 
-		<p>Hello ! I'm a Software Engineer.</p>
-		</section>
-		
-		<section id="projects">
-			<h2>Projects</h2>
-			<ul>
-				<li><strong>Project 1:</strong> E-Voting System</li>
-				<li><strong>Project 2:</strong> Random Quote Generator</li>
-				<li><strong>Project 3:</strong> Portfolio Website</li>
-			</ul>
-		</section>
-		
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>HTML & CSS</li>
-				<li>JavaScript</li>
-				<li>Java</li>
-				<li>SQL & PLSQL</li>
-			</ul>
-		</section>
-		
-		<section id="contact">
-			<h2>Contact</h2>
-			<p>Feel free to email me at <a href="mailto:shrutiavhad30@gmail.com">shrutiavhad30@gmail.com</a> or connect me on LinkedIn.</p>
-			
-		</section>
-	</div>
-	<footer>
-		<p>&copy; 2024 Shruti Avhad. All rights Reserved.</p>
-	</footer>
+    <div id="quote-box">
+        <div id="quote">"Loading a quote..."</div>
+        <div id="author"></div>
+        <button id="new-quote">New Quote</button>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

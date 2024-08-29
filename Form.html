@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 15px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 150, 0.2);
+            max-width: 500px;
+            width: 300vh;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+			text-shadow: 0px 0px 5px rgba(0, 0, 50, 0.2);
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 20px;
+			padding-right: -1px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+		
+		input[type="date"]{
+			padding: 5px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		select{
+			padding: 5px;
+			margin-bottom: 20px;
+			border : 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		input[type="file"]{
+			padding: 5px;
+			margin-bottom: 20px;
+		}
+		
+		textarea {
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #9999ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #8080ff ;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+	<h2>Personal Information Form</h2>
+    <form "background-color: white" action= "C:\Users\Owner\Downloads\form.png"  autocomplete="on">
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" required >
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" required><br><br>
+			
+			<label for="date">DOB:</label>
+			<input type="date" id="date" required><br><br>
+			
+			<label for="Gender">Gender</label>
+			<input type="radio" id="male" name="gender" value="Male" required>
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="Female">
+			<label for="female">Female</label>
+			<input type="radio" id="don't want to say" name="gender" value="Don't want to say">
+			<label for="Don't want to say">Don't want to say</label><br><br>
+			
+			<label for="Marital Status">Marital Status:</label>
+			<select id="Marital Status" name="Marital Status" required >
+			  <option value="Single">Single</option>
+			  <option value="Married">Married</option>
+			  <option value="Divorsed">Divorsed</option>
+			</select><br><br>
+						
+			<label for="Nationality">Nationality:</label>
+			<select id="Nationality" name="Nationality" required>
+			  <option value="Afghan">Afghan</option>
+			  <option value="Albania">Albanian</option>
+			  <option value="Algerian">Algerian</option>
+			  <option value="American">American</option>
+			  <option value="Bahamian">Bahamian</option>
+			  <option value="Bahraini">Bahraini</option>
+			  <option value="Bangladeshi">Bangladeshi</option>
+			  <option value="Cambodian">Cambodian</option>
+			  <option value="Cameroonian">Cameroonian</option>
+			  <option value="Canadian">Canadian</option>
+			  <option value="Danish">Danish</option>
+			  <option value="Djiboutian">Djiboutian</option>
+			  <option value="Dominican">Dominican</option>
+			  <option value="Dutch">Dutch</option>
+			  <option value="Ecuadorian">Ecuadorian</option>
+			  <option value="Egyptian">Egyptian</option>
+			  <option value="Emirati">Emirati</option>
+			  <option value="Equatoguinean">Equatoguinean</option>
+			  <option value="Eritrean">Eritrean</option>
+			  <option value="Fiji">Fiji</option>
+			  <option value="France">France</option>
+			  <option value="Finland">Finland</option>
+			  <option value="Gabonese">Gabonese</option>
+			  <option value="Gambian">Gambian</option>
+			  <option value="Georgian">Georgian</option>
+			  <option value="German">German</option>
+			  <option value="Haitian">Haitian</option>
+			  <option value="Honduran">Honduran</option>
+			  <option value="Hong Konger">Hong Konger</option>
+			  <option value="Icelandic">Icelandic</option>
+			  <option value="Indian">Indian</option>
+			  <option value="Indonesian">Indonesian</option>
+			  <option value="Iranian">Iranian</option>
+			  <option value="Jamaican">Jamaican</option>
+			  <option value="Japanese">Japanese</option>
+			  <option value="Kazakh">Kazakh</option>
+			  <option value="Kenyan">Kenyan</option>
+			  <option value="Lebanese">Lebanese</option>
+			  <option value="Liberian">Liberian</option>
+			  <option value="Macanese">Macanese</option>
+			  <option value="Macedonian">Macedonian</option>
+			  <option value="Malagasy">Malagasy</option>
+			  <option value="Malaysian">Malaysian</option>
+			  <option value="Maldivian">Maldivian</option>
+			  <option value="Malian">Malian</option>
+			  <option value="Namibian">Namibian</option>
+			  <option value="Nauruan">Nauruan</option>
+			  <option value="Nepalese">Nepalese</option>
+			  <option value="New Zealander">New Zealander</option>
+			  <option value="Nicaraguan">Nicaraguan</option>
+			  <option value="Nigerian">Nigerian</option>
+			  <option value="Omani">Omani</option>
+			  <option value="Pakistani">Pakistani</option>
+			  <option value="Palauan">Palauan</option>
+			  <option value="Palestinian">Palestinian</option>
+			  <option value="Portuguese">Portuguese</option>
+			  <option value="Qatari">Qatari</option>
+			  <option value="Salvadorean">Salvadorean	</option>
+			  <option value="Sammarinese">Sammarinese</option>
+			  <option value="Scottish">Scottish</option>
+			  <option value="Senegalese">Senegalese</option>
+			  <option value="Spanish">Spanish</option>
+			  <option value="Taiwanese">Taiwanese</option>
+			  <option value="Tajik">Tajik</option>
+			  <option value="Thai">Thai</option>
+			  <option value="Turkish">Turkish</option>
+			  <option value="Ugandan">Ugandan</option>
+			  <option value="Uruguayan">Uruguayan</option>
+			  <option value="Vatican citizen">Vatican citizen</option>
+			  <option value="Wallisian">Wallisian</option>
+			  <option value="Welsh">Welsh</option>
+			  <option value="Yemeni">Yemeni</option>
+			  <option value="Zambian">Zambian</option>
+			  <option value="Zimbabwean">Zimbabwean</option>
+
+			</select><br><br>
+			
+			<label for="file">Select your resume:</label>
+			<input type="file" id="file" name="file"><br><br>
+			
+			<label for="address">Address:</label>
+			<textarea name="Address" style="width:50%" required></textarea><br><br>
+
+            <label for="text">College Name:</label>
+			<textarea name="tert" style="width:50%" required></textarea><br><br>
+
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"required>
+			<label for="tel">Mobile No.:</label>
+			<input type="tel" id="tel" name="tel"><br><br>
+			
+			
+			<button type="submit">Submit</button><br><br>
+			<button type="reset" value="reset">Reset</button>
+			
+		</form>
+</div>
+
+</body>
+</html>
